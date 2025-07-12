@@ -14,7 +14,11 @@ The system supports PDF and TXT document uploads and offers an intuitive web-bas
 
 ### Demo Video
 
-[Watch demo video](./Screen%20Recording%202025-07-13%20021841%20(1).mp4)
+
+
+https://github.com/user-attachments/assets/6818c98c-0c50-4aae-8c3a-04f29b5e11d1
+
+
 
 ---
 
