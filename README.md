@@ -103,4 +103,3 @@ Contributions, suggestions, and improvements are welcome! Please open issues or 
 
 This project is licensed under the MIT License.
 
-```
