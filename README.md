@@ -20,17 +20,26 @@ The system supports PDF and TXT document uploads and offers an intuitive web-bas
    - Accepts PDF or TXT documents.
    - Assumes structured English reports, research papers, or similar.
 
-2. **Interaction Modes**
+2. **Auto Summary**
+   - Generates a concise summary (≤ 150 words) immediately after upload.
+  
+     <img width="2877" height="941" alt="image" src="https://github.com/user-attachments/assets/d8b2a03e-be23-4307-b7db-38ef50b80e9d" />
+
+3. **Interaction Modes**
    - **Ask Anything**: Users ask free-form questions; assistant provides answers grounded in the document.
    - **Challenge Me**: Assistant generates three logic-based/comprehension questions; users submit answers; assistant evaluates responses and provides feedback with document-based justifications.
 
-3. **Contextual Understanding**
+     <img width="2100" height="1177" alt="image" src="https://github.com/user-attachments/assets/98eb68d0-9ad8-4e87-8be9-2a2169b659f3" />
+
+
+4. **Contextual Understanding**
    - All answers and evaluations strictly based on the uploaded document content.
    - No hallucinations or fabricated information.
    - Each response includes references (e.g., “Supported by paragraph 3 of section 1”).
 
-4. **Auto Summary**
-   - Generates a concise summary (≤ 150 words) immediately after upload.
+   <img width="2862" height="1471" alt="image" src="https://github.com/user-attachments/assets/35fac5a5-c7fe-486a-b579-838747faf40d" />
+
+
 
 ---
 
