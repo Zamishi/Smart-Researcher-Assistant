@@ -12,6 +12,10 @@ This AI-powered assistant is designed to help users deeply understand complex do
 
 The system supports PDF and TXT document uploads and offers an intuitive web-based interface for smooth, responsive interaction.
 
+### Demo Video
+
+[Watch demo video](./Screen%20Recording%202025-07-13%20021841%20(1).mp4)
+
 ---
 
 ## Functional Requirements
