@@ -1,95 +1,106 @@
+
 # Smart Research Assistant
 
 ## Project Overview
 
-This AI-powered assistant is designed to help users deeply understand complex documents like research papers, technical manuals, or legal files by providing:
+This AI-powered assistant is designed to help users deeply understand complex documents such as research papers, technical manuals, or legal files by providing:
 
-- **Comprehension-based Q&A**: Answering free-form questions grounded in the uploaded document.
-- **Logic-based quizzes**: Generating reasoning questions and evaluating user responses with justifications.
-- **Concise summarization**: Automatically generating a summary of no more than 150 words.
-- **Document-aware interaction**: Ensuring all answers and evaluations are strictly based on the uploaded content with no hallucination.
+- Comprehensive, context-aware answers to free-form questions based on the uploaded document.
+- Logic-based question generation to challenge users’ comprehension and reasoning.
+- Automatic evaluation of user responses with detailed feedback and justifications grounded in the source document.
+- A concise summary (≤ 150 words) generated immediately upon document upload.
 
-The tool supports PDF and TXT document uploads and offers an intuitive web interface for seamless interaction.
+The system supports PDF and TXT document uploads and offers an intuitive web-based interface for smooth, responsive interaction.
 
 ---
 
-## Functional Features
+## Functional Requirements
 
 1. **Document Upload**
-   - Upload PDF or TXT documents.
-   - Supports structured English documents such as research papers or reports.
+   - Accepts PDF or TXT documents.
+   - Assumes structured English reports, research papers, or similar.
 
 2. **Interaction Modes**
-   - **Ask Anything**: Free-form question answering with contextual understanding based on the document.
-   - **Challenge Me**: Generates 3 logic/comprehension questions; evaluates answers and provides feedback with justifications linked to the document.
+   - **Ask Anything**: Users ask free-form questions; assistant provides answers grounded in the document.
+   - **Challenge Me**: Assistant generates three logic-based/comprehension questions; users submit answers; assistant evaluates responses and provides feedback with document-based justifications.
 
-3. **Contextual Understanding & Justification**
-   - All responses are strictly grounded in the uploaded document content.
-   - Every answer includes a reference or explanation pointing to the supporting section/paragraph.
-   - The system avoids hallucinations or fabricated information.
+3. **Contextual Understanding**
+   - All answers and evaluations strictly based on the uploaded document content.
+   - No hallucinations or fabricated information.
+   - Each response includes references (e.g., “Supported by paragraph 3 of section 1”).
 
 4. **Auto Summary**
-   - Generates a concise summary (≤ 150 words) immediately after document upload.
+   - Generates a concise summary (≤ 150 words) immediately after upload.
 
 ---
 
-## Architecture & Reasoning Flow
+## Architecture & Implementation
 
-- **Frontend**: Built using Streamlit for a clean and responsive user interface.
-- **Document Processing**: PyMuPDF extracts text from PDFs; TXT files read natively.
-- **NLP & AI**:
-  - Hugging Face Transformers and SentenceTransformers power semantic understanding and similarity scoring.
-  - Logic-based question generation derives reasoning-focused questions from the document.
-  - Semantic similarity and rule-based evaluation mechanisms assess user answers.
-- **Backend**: Core logic implemented in Python; the system is designed to run locally with modular components for easy expansion.
-- **Memory & Context Handling** (Optional): Supports follow-up questions maintaining prior context.
-- **Answer Highlighting** (Optional): Highlights exact document snippets supporting answers.
+- **Frontend:** Streamlit-based web interface for easy document upload and user interaction.
+- **Document Processing:** Uses PyMuPDF for PDF extraction; native reading for TXT files.
+- **NLP & AI Components:**
+  - Hugging Face Transformers and SentenceTransformers enable semantic understanding, question generation, and answer evaluation.
+  - Logic-based questions generated dynamically from document content.
+  - Semantic similarity and rule-based methods assess user answers.
+- **Backend:** Core logic implemented in Python; designed for local execution with modular, maintainable code.
+- **Bonus Features (Optional):**
+  - Memory handling to maintain context for follow-up questions.
+  - Answer highlighting to display document snippets supporting responses.
 
 ---
 
 ## Installation & Setup
 
-1. Clone the repository:
+1. **Clone the repository:**
 
 ```bash
-git clone https://github.com/yourusername/smart-research-assistant.git
+git clone https://github.com/Zamishi/Smart-Researcher-Assistant.git
 cd smart-research-assistant
-Create and activate a virtual environment:
+````
 
-bash
-Copy
-Edit
+2. **Create and activate a virtual environment:**
+
+```bash
 python -m venv venv
-source venv/bin/activate  # On Windows use: venv\Scripts\activate
-Install dependencies:
+# On macOS/Linux:
+source venv/bin/activate
+# On Windows:
+venv\Scripts\activate
+```
 
-bash
-Copy
-Edit
+3. **Install dependencies:**
+
+```bash
 pip install -r requirements.txt
-Run the Streamlit app:
+```
 
-bash
-Copy
-Edit
+4. **Run the application:**
+
+```bash
 streamlit run app.py
-Open your browser at the indicated localhost URL to use the assistant.
+```
 
-Evaluation Criteria Alignment
-Response Quality & Justification: Answers are generated with high accuracy and direct references to the document.
+5. **Open the provided localhost URL in your browser to start using the assistant.**
 
-Reasoning Mode Functionality: The “Challenge Me” mode tests logic and comprehension with automatic evaluation.
+---
 
-UI/UX: Clean and intuitive interface with easy navigation and smooth workflow.
+## Evaluation Criteria Alignment
 
-Code Quality: Well-structured and documented Python codebase.
+* **Response Quality & Justification:** Accurate answers supported by explicit references to the document.
+* **Reasoning Mode Functionality:** Robust “Challenge Me” mode generating meaningful logic questions with automatic answer evaluation.
+* **UI/UX & Smooth Flow:** Clean, intuitive interface ensuring a seamless user experience.
+* **Code Quality & Documentation:** Well-structured, readable, and thoroughly documented codebase with clear setup instructions.
+* **Creativity & Bonus Features:** Optional memory and answer highlighting features enhance usability.
+* **Minimal Hallucination & Good Context Use:** Strict grounding of all responses in source document to avoid fabrications.
 
-Creativity & Bonus Features: Optional support for memory/context and answer highlighting enhances user experience.
+---
 
-Minimal Hallucination: Strict grounding in the source document content ensures factual correctness.
+## Contribution
 
-Contribution
-Contributions and improvements are welcome. Please open issues or submit pull requests.
+Contributions, suggestions, and improvements are welcome! Please open issues or submit pull requests.
 
-License
-MIT License
+## License
+
+This project is licensed under the MIT License.
+
+```
